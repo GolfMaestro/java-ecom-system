@@ -84,7 +84,7 @@ public class Main {
                     else {
                         int d;
                         d = is_valid_int(scanner);
-                        customers.get(current_customer).add_to_card(catalog.get(d));
+                        customers.get(current_customer).remove_from_card(catalog.get(d));
                     }
                     break;
                 case 7:

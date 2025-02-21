@@ -23,6 +23,10 @@ public class Customer extends User{
         product.stock_update(1);
     }
 
+    public void remove_from_card(Product product) {
+        products.remove(product);
+    }
+
     public void show_shopping_card() {
         for (int i = 0; i < products.size(); i++) {
             products.get(i).show_card_info();
