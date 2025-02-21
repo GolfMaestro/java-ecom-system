@@ -1,9 +1,9 @@
 package org.example;
 
 public class Product {
-    private int id;
-    private String name;
-    private double cost;
+    private final int id;
+    private final String name;
+    private final double cost;
     private int stock;
 
     public Product(int id, String name, double cost, int stock) {

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Customer extends User{
 
-    private List<Product> products;
+    private final List<Product> products;
 
     public Customer(String name, int id, String email) {
         super(name, id, email);
@@ -20,10 +20,7 @@ public class Customer extends User{
 
     public void add_to_card(Product product) {
         products.add(product);
-    }
-
-    public void remove_from_card(Product product) {
-        products.remove(product);
+        product.stock_update(1);
     }
 
     public void show_shopping_card() {
